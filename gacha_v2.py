@@ -167,7 +167,7 @@ if uploaded_file:
                     st.write(f"{g} 등급 1개 획득 평균 비용: {avg_cost:,.0f}원")
 
                 st.subheader("📊 합성 시도 로그")
-                for g in ["A", "S", "R"]:
+                for g in ["R"]:
                     tries = synth_log_total[g]["try"]
                     successes = synth_log_total[g]["success"]
                     fails = tries - successes
